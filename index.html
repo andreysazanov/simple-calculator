@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <title>Simple Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple Calculator">
+  <meta name="keywords" content="simple,calculator">
+  <meta name="author" content="sazanovstyle@gmail.com">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- Jquery -->
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- Calculator LESS and JS -->
+  <script src="js/calc.js"></script>
+  <link rel="stylesheet/less" type="text/css" href="css/calc.less">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+</head>
+<body>
+  <div class="calculator">
+    <div class="monitor" id="monitor"><span>0</span></div>
+    <div class="row bc">
+      <div class="col-xs-6">
+        <div id="bc-ac">AC</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="bc-memory">M</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="bc-obelus" class="operation">&#247;</div>
+      </div>
+    </div>
+
+    <div class="row bc">
+      <div class="col-xs-3">
+        <div id="bc-7">7</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="bc-8">8</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="bc-9">9</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="bc-multi" class="operation">&#xD7;</div>
+      </div>
+    </div>
+
+    <div class="row bc">
+      <div class="col-xs-3">
+        <div id="bc-6">6</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="bc-5">5</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="bc-4">4</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="bc-minus" class="operation">&minus;</div>
+      </div>
+    </div>
+
+    <div class="row bc">
+      <div class="col-xs-3">
+        <div id="bc-3">3</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="bc-2">2</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="bc-1">1</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="bc-plus" class="operation">&plus;</div>
+      </div>
+    </div>
+
+    <div class="row bc">
+      <div class="col-xs-6">
+        <div id="bc-ac">0</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="bc-ac">.</div>
+      </div>
+      <div class="col-xs-3">
+        <div id="bc-specifically" class="operation">&#61;</div>
+      </div>
+    </div>
+
+    <input type="hidden" id="tmp_operation" value="0">
+    <input type="hidden" id="tmp_monitor" value="0">
+    <input type="hidden" id="tmp_o" value="0">
+    <input type="hidden" id="tmp_or" value="0">
+    <input type="hidden" id="tmp_m" value="0">
+    <input type="hidden" id="tmp_memory" value="0">
+    <input type="hidden" id="tmp_memory_num" value="false">
+  </div>
+</body>
+</html>

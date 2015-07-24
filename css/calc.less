@@ -1,0 +1,54 @@
+.calculator {
+  margin: 5% auto;
+  padding: 1%;
+  background: #e0e0e0;
+  width: 300px;
+  border-radius: 10px;
+
+  .monitor {
+    width: 100%;
+    height: 90px;
+    border-radius: 5px;
+    background: #fff;
+    text-align: right;
+    padding: 28px 10%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+  }
+  .bc {
+    margin-top: 15px;
+  
+    div {
+      div {
+        background: rgb(117, 115, 113);
+        border-radius: 5px;
+        height: 45px;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 18px;
+        color:#fff;
+        cursor: pointer;
+        &:hover {
+          background: rgb(150, 147, 145);
+        }
+      }
+
+      div.operation {
+        background: rgb(225, 137, 52);
+        font-weight: bold;
+        &:hover {
+          background: rgb(193, 117, 45);
+        }
+      }
+      div#bc-memory {
+        background: #3587e1;
+        font-weight: bold;
+        &:hover {
+          background: #3a93f4;
+        }
+      }
+    }
+
+  }
+}
